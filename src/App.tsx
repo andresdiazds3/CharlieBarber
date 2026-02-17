@@ -1,6 +1,6 @@
 import './App.css'
-import Navbar from './components/Navbar.tsx'
-import Hero from './components/Hero.tsx'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 function App() {
   return (
