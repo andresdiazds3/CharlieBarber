@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import ServiceCard from './components/ServiceCard';
 
 function App() {
   return (
