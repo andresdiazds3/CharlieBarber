@@ -1,10 +1,12 @@
 import ServiceCard from "./ServiceCard";
 import { Services } from "../data/DataServices";
 import '../styles/serviceSection.css'
+import BackImg from '../img/back.png'
 
 function ServiceSection() {
   return (
-    <section id="servicios" className="serviciosContenedor">
+    <section id="servicios" className="serviciosContenedor"
+    style = {{ backgroundImage: `url(${BackImg})` }}>
       <div className="decorative-shape"></div>
       <h1>Nuestros Servicios</h1>
       <div>

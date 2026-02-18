@@ -8,7 +8,6 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  animation: slideInUp 1s ease-out 0.8s both;
 }
 
 @keyframes slideInUp {
