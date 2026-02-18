@@ -3,7 +3,7 @@ import "../styles/WhatsAppButton.css"
 
 const WhatsAppButton = () => {
   const phoneNumber = "573123177113"; // tu número con código país
-  const message = "Hola, quiero información sobre sus servicios";
+  const message = "Hola, quiero agendar una cita para el dia ...";
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -14,6 +14,7 @@ const WhatsAppButton = () => {
       className="whatsapp-button"
     >
       <FaWhatsapp size={30} />
+      <span className="tooltip">Contáctanos</span>
     </a>
   );
 };

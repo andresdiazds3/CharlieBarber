@@ -1,0 +1,157 @@
+.footer {
+  background: 
+    linear-gradient(135deg, #0a0a0a 0%, #111 50%, #0a0a0a 100%),
+    radial-gradient(ellipse at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  background-attachment: fixed;
+  padding: 80px 10% 50px 10%;
+  border-top: 2px solid var(--primary);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: slideInUp 1s ease-out 0.8s both;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo */
+.footer-logo {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: var(--primary);
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px var(--shadow);
+  background: linear-gradient(45deg, var(--primary), #f4e87c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Slogan */
+.footer-slogan {
+  color: #bbb;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  opacity: 0.9;
+}
+
+/* Stats */
+.footer-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.stat p {
+  color: #ccc;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Íconos */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-socials a {
+  font-size: 2rem;
+  color: #ccc;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.footer-socials a:hover {
+  color: var(--primary);
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.85rem;
+  color: #777;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 5% 40px 5%;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat h3 {
+    font-size: 2rem;
+  }
+
+  .footer-socials {
+    gap: 25px;
+  }
+
+  .footer-socials a {
+    font-size: 1.5rem;
+  }
+}

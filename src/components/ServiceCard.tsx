@@ -1,3 +1,5 @@
+import '../styles/serviceCard.css'
+
 type ServicioProps = {
   nombre: string;
   descripcion: string;
@@ -7,14 +9,16 @@ type ServicioProps = {
 
 const ServiceCard = ({ nombre, descripcion, precio, imagen }: ServicioProps) => {
   return (
-    <div>
-      <img src={imagen} alt={nombre} />
+    <div className="service-card">
+      <div className="service-img-container">
+        <img src={imagen} alt={nombre} />
+      </div>
+
       <h2>{nombre}</h2>
       <p>{descripcion}</p>
-      <h2>${precio}</h2>
+      <span className="price">${precio.toLocaleString()}</span>
     </div>
   );
 }
 
 export default ServiceCard;
-

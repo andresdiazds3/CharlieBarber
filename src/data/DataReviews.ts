@@ -8,18 +8,21 @@ export const ReviewsList = [
         id: 1,
         nombre:"Andres Diaz",
         pfp: corte1,
-        desc: "Muy buena atención al cliente, brindan siempre agua, se pueden comprar otras bebidas, y el corte fue muy bueno"
+        desc: "Muy buena atención al cliente, brindan siempre agua, se pueden comprar otras bebidas, y el corte fue muy bueno",
+        rating: 5
     },
     {
         id:2,
         nombre:"Luciano Ferreira",
         pfp: corte2,
-        desc: "Atención muy buena, salgo muy satisfecho con mi corte de pelo y barba"
+        desc: "Atención muy buena, salgo muy satisfecho con mi corte de pelo y barba",
+        rating: 5
     },
     {
         id:3,
         nombre: "Bryan Gomez",
         pfp: corte3,
-        desc:"El mejor corte que he recibido, muy profesional, urbano y elegante 10/10"
+        desc:"El mejor corte que he recibido, muy profesional, urbano y elegante 10/10",
+        rating: 5
     }
 ]

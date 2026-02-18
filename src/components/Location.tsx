@@ -1,14 +1,22 @@
+import "../styles/location.css";
+
 const Location = () => {
   return (
-    <div className="Mapa">
-      <iframe
-        src="https://maps.google.com/maps?q=%20%20INTEGRAL%20BARBER%20-%20Barberia&t=h&z=15&ie=UTF8&iwloc=B&output=embed"
-        width="100%"
-        height="400"
-        style={{ border: 0 }}
-        loading="lazy"
-      ></iframe>
-    </div>
+    <section id="ubicacion" className="location-section">
+      <div className="decorative-shape"></div>
+      <h1>Nuestra Ubicación</h1>
+
+      <div className="location-container">
+        <iframe
+          src="https://maps.google.com/maps?q=3.477935602412148,-76.51663974537266&t=h&z=18&ie=UTF8&iwloc=B&output=embed"
+          loading="lazy"
+          allow="geolocation"
+        ></iframe>
+      </div>
+
+      <div className="location-info">
+      </div>
+    </section>
   );
 };
 

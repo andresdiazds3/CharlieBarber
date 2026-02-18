@@ -1,0 +1,68 @@
+/* Global Styles for Modern Design */
+
+* {
+  transition: all 0.3s ease;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Elementos decorativos */
+.decorative-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.decorative-shape {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, var(--primary), transparent);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  opacity: 0.1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+
+  body {
+    padding-top: 50px;
+  }
+}

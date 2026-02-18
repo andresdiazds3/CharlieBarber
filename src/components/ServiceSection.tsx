@@ -1,9 +1,11 @@
 import ServiceCard from "./ServiceCard";
 import { Services } from "../data/DataServices";
+import '../styles/serviceSection.css'
 
 function ServiceSection() {
   return (
-    <section className="serviciosContenedor">
+    <section id="servicios" className="serviciosContenedor">
+      <div className="decorative-shape"></div>
       <h1>Nuestros Servicios</h1>
       <div>
         {Services.map((Service) => (

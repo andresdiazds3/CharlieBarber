@@ -7,21 +7,21 @@ export const Services = [
     id: 1,
     img: CorteService,
     nombre: "Corte",
-    desc: "Corte Tradicional...",
+    desc: "Corte Tradicional, Urbano o Elegante Utilizando maquina, tijera y estilizando a tu gusto",
     precio: 30000
   },
   {
     id: 2,
     img: CorteYBarbaService,
     nombre: "Corte + Barba",
-    desc: "Corte de Pelo...",
+    desc: "Corte de Pelo tradicional, y manejo de barba estilización a tu gusto y perfil  ",
     precio: 40000
   },
   {
     id: 3,
     img: BarbaService,
     nombre: "Barba",
-    desc: "Marcación y Corte de Barba",
+    desc: "Marcación de Barba Premium, Corte y Estilización",
     precio: 16000
   }
 ];

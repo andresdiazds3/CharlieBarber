@@ -1,15 +1,24 @@
-import '../styles/hero.css'
+import "../styles/hero.css";
+import HeroImg from "../img/hero-image.png";
 
 const Hero = () => {
-    return(
-        <div className="contenedorHome">
-            <h1> Titulo </h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, atque fuga <br></br> quasi quaerat qui voluptas quos incidunt. Quibusdam alias porro quisquam, nihil minus assumenda magnam veniam. Libero eaque odit autem.</p>
-            <a href=""> Explorar Servicios</a>
-        </div>
+  return (
+    <section
+      id="home"
+      className="hero"
+      style={{ backgroundImage: `url(${HeroImg})` }}
+    >
+      <div className="hero-overlay"></div>
 
-    );
-}
+      <div className="hero-content">
+        <h1>Charlie Barber</h1>
+        <p className="hero-subtitle">Estilo Urbano • Precisión Elegante</p>
+        <p>Donde cada corte cuenta una historia. Experiencia premium para hombres modernos.</p>
+        <a href="#servicios"><button>Nuestros Servicios</button></a>
+      </div>
+    </section>
+  );
+};
 
 export default Hero;
 

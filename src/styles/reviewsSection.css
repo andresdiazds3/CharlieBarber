@@ -1,0 +1,48 @@
+.reviews-section {
+  padding: 100px 10%;
+  background: 
+    linear-gradient(135deg, #0f0f0f 0%, #111 100%),
+    conic-gradient(from 45deg, rgba(212, 175, 55, 0.05), transparent, rgba(212, 175, 55, 0.05));
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  animation: slideInRight 1s ease-out 0.4s both;
+}
+
+.reviews-section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.02) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reviews-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: var(--primary);
+  letter-spacing: 2px;
+}
+
+/* GRID */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
